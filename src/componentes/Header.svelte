@@ -1,14 +1,14 @@
 <script>
-    import Button from "./Button.svelte";    
+    import HeaderButton from "./HeaderButton.svelte";    
 </script>
 
 <div class="header-container">
     <div class="header-icon_container"></div>
-    <Button children = "Biblioteca"></Button>
-    <Button children = "Intercambio"></Button>
-    <Button children = "Tienda"></Button>
-    <Button children = "Publicaciones"></Button>
-    <Button children = "Audiolibros"></Button>
+    <HeaderButton children = "Biblioteca"></HeaderButton>
+    <HeaderButton children = "Intercambio"></HeaderButton>
+    <HeaderButton children = "Tienda"></HeaderButton>
+    <HeaderButton children = "Publicaciones"></HeaderButton>
+    <HeaderButton children = "Audiolibros"></HeaderButton>
 </div>
 
 <style>

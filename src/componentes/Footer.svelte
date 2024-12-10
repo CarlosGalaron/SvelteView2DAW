@@ -1,4 +1,5 @@
 <script>
+    import FooterIcon from "./FooterIcon.svelte";
     import carta from ".././assets/./images/carta.png";
     import facebook from ".././assets/./images/facebook.png";
     import x from ".././assets/./images/x.png";
@@ -9,11 +10,11 @@
 
 <div class="footer-container">
     <div class="footer-icon-strecher">
-    <div class="footer-icon-container"><img class="footer-fb-pic" src={facebook} alt="facebook" /></div>
-    <div class="footer-icon-container"><img class="footer-insta-pic" src={instagram} alt="instagram" /></div>
-    <div class="footer-icon-container"><img class="footer-x-pic" src={x} alt="twitter" /></div>
-    <div class="footer-icon-container"><img class="footer-whatsapp-pic" src={whatsapp} alt="whatsapp" /></div>
-</div>
+        <FooterIcon src={facebook} alt="facebook" imgClass="footer-fb-pic" />
+        <FooterIcon src={instagram} alt="instagram" imgClass="footer-insta-pic" />
+        <FooterIcon src={x} alt="twitter" imgClass="footer-x-pic" />
+        <FooterIcon src={whatsapp} alt="whatsapp" imgClass="footer-whatsapp-pic" />
+    </div>
     <div class="footer-contact-container">
         <div class="footer-text-container">
             <p class="footer-text-contact">Contacta con nosotros</p>
@@ -48,22 +49,6 @@
         row-gap: 1rem;
     }
 
-    .footer-icon-container {
-        width: 2.5em;
-        height: 2.5em;
-        background-color: rgb(55, 94, 201);
-        color: rgb(55, 94, 201);        
-        border: 2px solid rgb(7, 7, 63);
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 4% 0 4%;
-        border-radius: 10%;
-    }
-
-
-
     .footer-contact-container{
         display: flex;
         margin-right: 20px;        
@@ -82,8 +67,4 @@
         height: 8vh;
     }
 
-    .footer-fb-pic, .footer-insta-pic, .footer-x-pic, .footer-whatsapp-pic{
-        height: 10vh;
-        margin: 0.5 0.5rem;
-    }
 </style>
